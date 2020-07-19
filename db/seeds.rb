@@ -43,5 +43,23 @@ algorithms = Algorithm.create(
     { algotype: 'River Sizes'},
     { algotype: 'Airport Connections'},
     { algotype: 'Rearrange Linked List'},
+    { algotype: 'Two Number Sum'},
+    { algotype: 'Branch Sums'},
+    { algotype: 'Node Depths'},
+    { algotype: 'Nth Fibonacci'},
+    { algotype: 'Palindrome Check'},
+    { algotype: 'Three Number Sum'},
+    { algotype: 'Smallest Difference'},
+    { algotype: 'Spiral Traverse'},
+    { algotype: 'Longest Peak'},
+    { algotype: 'Minimum Height BST'},
+    { algotype: 'Invert Binary Tree'},
+    { algotype: 'Levenshtein Distance'},
+    { algotype: 'Permutations'},
+    { algotype: 'Powerset'},
+    { algotype: 'Search in Sorted Matrix'},
+    { algotype: 'Group Anagrams'},
+    { algotype: 'Reverse Linked List'},
+    { algotype: 'Merge Linked List'}
   ]
 )
