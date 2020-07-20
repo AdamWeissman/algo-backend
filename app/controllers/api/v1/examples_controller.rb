@@ -15,7 +15,7 @@ class Api::V1::ExamplesController < ApplicationController
 
   def show
     @algorithm = Algorithm.find(params[:algorithm_id])
-    render json: "SOME MESSAGE: #{@algorithm.algotype}"
+    render json: @algorithm.examples
   end
 
   private
