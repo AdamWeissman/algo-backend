@@ -7,6 +7,6 @@ class Api::V1::AlgorithmsController < ApplicationController
 
   def show
     @algorithm = Algorithm.find_by_id(params[:id])
-    render json: @algorithm
+    render json: @algorithm.examples
   end
 end
