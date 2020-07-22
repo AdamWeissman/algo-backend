@@ -63,3 +63,9 @@ algorithms = Algorithm.create(
     { algotype: 'Merge Linked List'}
   ]
 )
+
+examples = Example.create(
+  [
+    { exampalgotype: 'Binary Search'},
+  ]
+)

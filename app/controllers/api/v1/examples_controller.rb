@@ -9,7 +9,7 @@ class Api::V1::ExamplesController < ApplicationController
     @algorithm = Algorithm.find(params[:algorithm_id])
     @example = @algorithm.example.new(example_params)
     @example.save
-    render json: "#{@example.example} has been created"
+    render json: "#{@example.title} has been created"
 
   end
 
@@ -21,7 +21,7 @@ class Api::V1::ExamplesController < ApplicationController
   private
 
   def example_params
-    params.require(:example).permit(:example) 
+    params.require(:example).permit(:title, :content) 
   end
 
 
