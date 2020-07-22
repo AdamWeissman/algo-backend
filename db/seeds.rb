@@ -64,4 +64,5 @@ algorithms = Algorithm.create(
   ]
 )
 
+# NOTE: the seeding for examples previously PROBABLy did not work because of the valdiation on the model messing things up, worth trying this again if I need to reseed
 
