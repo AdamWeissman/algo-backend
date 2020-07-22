@@ -64,8 +64,4 @@ algorithms = Algorithm.create(
   ]
 )
 
-examples = Example.create(
-  [
-    { exampalgotype: 'Binary Search'},
-  ]
-)
+
