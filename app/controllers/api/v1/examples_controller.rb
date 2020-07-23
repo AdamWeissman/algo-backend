@@ -15,7 +15,8 @@ class Api::V1::ExamplesController < ApplicationController
 
   def show
     @algorithm = Algorithm.find(params[:algorithm_id])
-    render json: @algorithm.examples
+    @example = Example.find(params[:id])
+    render json: @example
   end
 
   private
