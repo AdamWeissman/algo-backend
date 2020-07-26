@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :algorithms, only: [:index] do
-        resources :examples, only: [:create, :show, :index]
+        resources :examples, only: [:create, :update, :show, :index]
       end
     end
   end

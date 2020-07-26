@@ -10,8 +10,15 @@ class Api::V1::ExamplesController < ApplicationController
     @example = @algorithm.examples.new(example_params)
     @example.save
     render json: "#{@example.title} has been created"
-
   end
+
+  def update
+    @algorithm = Algorithm.find(params[:algorithm_id])
+    @example = @algorithm.examples.find(params[:example_id])
+    @example.save
+    render json: "#{@example.title} has been updated with #{@example.content}"
+  end
+
 
   def show
     @algorithm = Algorithm.find(params[:algorithm_id])
