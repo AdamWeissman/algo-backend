@@ -14,6 +14,7 @@ class Api::V1::ExamplesController < ApplicationController
 
   def update
     @algorithm = Algorithm.find(params[:algorithm_id])
+    binding.pry
     @example = @algorithm.examples.find(params[:example_id])
     @example.save
     render json: "#{@example.title} has been updated with #{@example.content}"
